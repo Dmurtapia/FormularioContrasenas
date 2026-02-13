@@ -44,7 +44,7 @@
                 <button onclick="navigator.clipboard.writeText('{{ $password }}')" 
                         style="
                         min-width:180px;
-                        background-color:#059669;
+                        background-color:#e7f5f0;
                         ">
                     Copiar contraseña
                 </button>
