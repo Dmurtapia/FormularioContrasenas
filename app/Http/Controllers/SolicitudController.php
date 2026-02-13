@@ -11,25 +11,33 @@ class SolicitudController extends Controller
         return view('formulario');
     }
 
-    public function store(Request $request)
-    {
-        $request->validate([
-            'nombre' => 'required|string|max:255',
-            'email' => 'required|email',
-            'motivo' => 'required|string'
-        ], [
-            'nombre.required' => 'El nombre es obligatorio.',
-            'nombre.max' => 'El nombre no puede superar los 255 caracteres.',
+public function store(Request $request)
+{
+    $request->validate([
+        'nombre' => 'required|string|max:255',
+        'email' => 'required|email',
+        'motivo' => 'required|string'
+    ], [
+        'nombre.required' => 'El nombre es obligatorio.',
+        'email.required' => 'El email es obligatorio.',
+        'email.email' => 'Debes introducir un email válido.',
+        'motivo.required' => 'Debes indicar el motivo de la solicitud.'
+    ]);
+    // Primera letra en mayúscula
+    $firstLetter = chr(random_int(65, 90)); // A-Z
+    
+    // Generar 7 letras minúsculas aleatorias
+    $letters = '';
+    for ($i = 0; $i < 7; $i++) {
+        $letters .= chr(random_int(97, 122)); // a-z
+    }   
 
-            'email.required' => 'El email es obligatorio.',
-            'email.email' => 'Debes introducir un email válido.',
+    // Generar 2 números al final
+    $numbers = str_pad(random_int(0, 99), 2, '0', STR_PAD_LEFT);
 
-            'motivo.required' => 'Debes indicar el motivo de la solicitud.'
-        ]);
+    // Construir contraseña final
+    $password = $firstLetter . $letters . $numbers;
 
-        // Generar contraseña numérica aleatoria de 10 dígitos
-        $password = str_pad(random_int(0, 9999999999), 10, '0', STR_PAD_LEFT);
-
-        return view('resultado', compact('password'));
+    return view('resultado', compact('password'));
     }
 }

@@ -1,0 +1,116 @@
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F8FAFC;
+    color: #1F2937;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: white;
+    padding: 15px 0;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-icon {
+    font-size: 24px;
+    font-weight: bold;
+    color: #006BB6;
+}
+
+.header-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header-sub {
+    font-size: 14px;
+    color: #4B5563;
+}
+
+/* ===== CARDS ===== */
+.card {
+    background: white;
+    padding: 30px;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+/* ===== TITLES ===== */
+h1, h2 {
+    margin-bottom: 12px;
+    color: #1F2937;
+}
+
+/* ===== FORM ===== */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-size: 15px;
+    color: #1F2937;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #006BB6;
+    box-shadow: 0 0 4px rgba(0,107,182,0.3);
+}
+
+button {
+    background-color: #006BB6;
+    border: none;
+    color: white;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #005799;
+}
+
+/* ===== ERRORS ===== */
+.error-box {
+    background-color: #FEE2E2;
+    border: 1px solid #FECACA;
+    color: #991B1B;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 18px 0;
+    font-size: 14px;
+    color: #6B7280;
+    border-top: 1px solid #E5E7EB;
+}
