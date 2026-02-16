@@ -1,4 +1,4 @@
-/* ===== GLOBAL ===== */
+/* GLOBAL */
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body {
     color: white;
 }
 
-/* ===== CONTAINER ===== */
+/* CONTAINER */
 .container {
     width: 90%;
     max-width: 1100px;
@@ -22,7 +22,7 @@ body {
     padding: 30px 0; /* reducido espacio superior */
 }
 
-/* ===== HEADER ===== */
+/* HEADER */
 header {
     text-align: center;
     padding: 15px 0; /* menos espacio arriba */
@@ -38,7 +38,7 @@ header {
     opacity: 0.85;
 }
 
-/* ===== CARD GLASS ===== */
+/* CARD GLASS */
 .card {
     background: rgba(255, 255, 255, 0.18);
     backdrop-filter: blur(20px);
@@ -49,13 +49,13 @@ header {
     margin-bottom: 30px;
 }
 
-/* ===== TITLES ===== */
+/* TITLES */
 h1, h2 {
     margin-bottom: 18px;
     font-weight: 600;
 }
 
-/* ===== FORM ===== */
+/* FORM */
 label {
     display: block;
     margin-bottom: 8px;
@@ -80,7 +80,7 @@ input:focus, textarea:focus {
     transform: scale(1.01);
 }
 
-/* ===== BOTÓN PROFESIONAL ===== */
+/* BOTÓN PROFESIONAL */
 button {
     width: 100%;
     padding: 16px 20px;
@@ -105,7 +105,7 @@ button:active {
     transform: translateY(0);
 }
 
-/* ===== ERROR ===== */
+/* ERROR */
 .error-box {
     background: rgba(255, 0, 0, 0.25);
     padding: 15px;
@@ -113,7 +113,7 @@ button:active {
     margin-bottom: 20px;
 }
 
-/* ===== PASSWORD RESULTADO MEJORADO ===== */
+/* PASSWORD RESULTADO MEJORADO */
 .password-box {
     font-size: 56px;
     font-weight: 700;
@@ -134,7 +134,7 @@ button:active {
     box-shadow: 0 20px 50px rgba(0,0,0,0.35);
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 footer {
     text-align: center;
     margin-top: auto;
