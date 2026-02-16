@@ -51,8 +51,8 @@
 
             </div>
 
-            <p style="margin-top:25px; font-size:13px; color:#6B7280;">
-                Recomendación: no compartas esta contraseña.
+            <p style="margin-top:25px; font-size:18px; color:#000000; font-weight:bold;">
+                "Recomendación: No compartas esta contraseña"
             </p>
 
         </div>

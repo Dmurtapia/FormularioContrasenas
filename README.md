@@ -1,6 +1,6 @@
 ## Ejecutar proyecto
 - abrir cmd y:
-cd C:\Users\Dmur\Documents\proyectosPHP\pruebaTailwind
+cd C:\Users\Dmur\Documents\proyectosPHP\FormularioContraseñas
 npm run dev
 
 ## Seguido en la terminal de VS CODE
